@@ -6,7 +6,7 @@ function calculate(){
     var Taft = parseFloat(document.getElementById("Taft").value);
     var T = (Tf+Taft)/2;
     var Speed = parseFloat(document.getElementById("Speed").value)*0.5144;
-    // var CB = document.getElementById("CB").value;
+    var CB = document.getElementById("CB").value;
     var CM = parseFloat(document.getElementById("CM").value);
     var CWP = parseFloat(document.getElementById("CWP").value);
     var LCB = parseFloat(document.getElementById("LCB").value);
@@ -28,12 +28,9 @@ function calculate(){
     var bulbousBow = parseFloat(document.getElementById("Bow").value);
     var transom = parseFloat(document.getElementById("Transom").value);
     var dis = CB*LBP*B*T;
-    var dis = 37500;
-    var CB = dis/(LBP*B*T);
     var CP = CB/CM;
     var Am = CM*B*T;
     var Wpa = CWP*LBP*B;
-    // var dis = CB*LBP*B*T;
     var Lr = (1-CP+0.06*CP*LCB/((4*CP)-1))*LBP;  
     var ie = 1+89*Math.exp(-1*((LBP/B)**0.80856)*((1-CWP)**0.30484)*((1-CP-0.0225*LCB)**0.6367)*((Lr/B)**0.34574)*((100*dis/(LBP**3))**0.16302));
     var Fn = Speed/(Math.sqrt(9.81*LBP));                                                                  /* Froudes number */
