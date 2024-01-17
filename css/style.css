@@ -18,7 +18,6 @@
 }
 .principalparticulars, .coefficients,.appandages{
     border: 1px solid blue;
-    length: fit-content;
 }
 table, th, td{
     border: 1px solid black;
